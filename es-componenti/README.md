@@ -16,4 +16,7 @@ Puoi utilizzare il componente Hello più di una volta nel componente App? Cosa s
 Risposta: Si puoi inserire più volte il componente in app scrivendo i tag all'interno di <> </> e nell'html vengono generati tag h1 e tag p tutti allo stessi livello
 
 Puoi renderizzare il componente Message direttamente all'interno del componente App? Cosa succede se lo fai?
-Scrivi le tue risposte in un commento. Modifica il file vite.config.js per modificare la porta predefinita di Vite su 3000.
+
+Risposta: puoi farlo basta importare message in app
+
+Modifica il file vite.config.js per modificare la porta predefinita di Vite su 3000.

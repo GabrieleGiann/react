@@ -1,11 +1,11 @@
 import Age from "./Age"
 
 
-function Welcome (props) {
+function Welcome ({name = "Pluto", age}) {
   return (
     <>
-    <p>Welcome <strong>{props.name}</strong> </p>
-    <Age age={props.age}/>
+    <p>Welcome <strong>{name}</strong> </p>
+    <Age age={age}/>
     </>
   )
 }

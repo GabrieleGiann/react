@@ -1,13 +1,10 @@
 import './App.css'
 import Welcome from './components/Welcome'
 
-
 function App() {
-
   return (
     <>
-    <Welcome age={18}/>
-      <Welcome name={"pippo"} age={18}/>
+    <Welcome name="John" age="20"/>
     </>
   )
 }
