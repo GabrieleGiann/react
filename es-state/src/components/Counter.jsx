@@ -10,6 +10,8 @@ Create a new component called CounterDisplay passing it the counter state variab
 rendered within an h2 tag.
 The CounterDisplay component should be rendered within the Counter component. When calling "setter"
 function to increment the counter, should the parameter be a function or an immediate value? 
+
+The parameter should be a function because u can't update parameter directly
 Why? Write your answers in a comment.
 
 
