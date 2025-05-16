@@ -10,22 +10,37 @@ Create a new component called CounterDisplay passing it the counter state variab
 rendered within an h2 tag.
 The CounterDisplay component should be rendered within the Counter component. When calling "setter"
 function to increment the counter, should the parameter be a function or an immediate value? 
-
-The parameter should be a function because u can't update parameter directly
 Why? Write your answers in a comment.
 
-
+The parameter should be a function because u can't update parameter directly
 */
 const Counter = ({start, increment}) => {
   const [count, setCount] = useState(start)
  
+  const handleIncrement = () =>{
+    setCount((count) => count + increment)
+  } 
+
+  const handleDecrement =() =>{
+    setCount((count) => count - increment)
+  }
+
+  const handleReset = () =>{
+    setCount(start)
+  }
 
   return (
     <div id="container">
-    <CounterDisplay value={count}/>    
+    <CounterDisplay value={count}/>  
+    {/*
     <button onClick={()=> setCount((count) => count + increment)}> Aumenta</button>
     <button onClick={()=> setCount((count) => count - increment)}>Diminuisci </button>
     <button onClick={()=> setCount((count) => count = start)}>reset </button>
+    */}
+    <button onClick={handleIncrement}>Aumenta</button>
+    <button onClick={handleDecrement}>Diminuisci</button>
+    <button onClick={handleReset}>Resetta</button>
+
     </div>
   )
 }
