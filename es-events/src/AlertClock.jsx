@@ -1,7 +1,7 @@
 
-const AlertClock = ({callback}) => {
+const AlertClock = ({handler}) => {
   return (
-    <button onClick={callback} >Show Alert</button>
+    <button onClick={handler} >Show Alert</button>
   )
 }
 

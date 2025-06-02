@@ -1,12 +1,9 @@
-# React + Vite
+In un'applicazione React, crea un componente funzione Welcome che riceva una prop name e una prop age. Crea un componente Age che riceva una prop age. Il componente Welcome renderizzerà un messaggio di benvenuto, {name}! all'interno di un tag p e 5 componenti Age. Utilizza ogni volta il rendering condizionale con una delle seguenti condizioni:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Il componente Age viene renderizzato solo se la prop age è maggiore di 18.
+Il componente Age viene renderizzato solo se la prop age è presente.
+Il componente Age viene renderizzato solo se la prop age è maggiore di 18 e minore di 65.
+Il componente Age viene renderizzato solo se la prop age è maggiore di 18 e la prop name è uguale a "John".
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Crea un nuovo componente Message che riceva una prop age e renderizzi lo stesso messaggio se la prop è maggiore di 18, altrimenti renderizzi il messaggio "Sei molto giovane!".
+Rendi il componente Message all'interno del componente Welcome.

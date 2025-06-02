@@ -5,19 +5,47 @@ import LanguageContext from './LanguageContext';
 const App = () => {
   const [language, setLanguage] = useState('en');
 
+
+
+  const selectOption = 
+    [
+      {
+        code: "it",
+        label:"italiano"
+      },
+      {
+        code: "en",
+        label:"inglese"
+      },
+      {
+        code: "es",
+        label:"spagnolo"
+      },
+      {
+        code:"de",
+        label:"tedesco"
+      },
+      {
+        code:"fr",
+        label:"francese"
+      }
+    ]
+  
   return (
-    <LanguageContext.Provider value={{ language }}>
+    <>
       <div>
         <select value={language} onChange={(e) => setLanguage(e.target.value)}>
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="fr">Français</option>
-          <option value="de">Deutsch</option>
-          <option value="it">Italiano</option>
-        </select>
-        <Hello />
+          {
+            selectOption.map((s)=>(
+              <option key={s.code} value={s.code}>{s.label}</option>
+            ))
+          }
+    </select>
       </div>
-    </LanguageContext.Provider>
+      <LanguageContext.Provider value={{ language }}>
+      <Hello />
+      </LanguageContext.Provider>
+    </>
   );
 };
 

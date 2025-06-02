@@ -1,12 +1,7 @@
-# React + Vite
+Create a MouseClicker component that contains a button with a name attribute set to the "one" string.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Attach an event handler to the button that prints the name attribute to the console when clicked by reading the event.target.name property.
 
-Currently, two official plugins are available:
+Add another button with the name attribute set to "two" and an image inside the button and add another event handler to it that prints the src of the image to the console when clicked.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+How can you prevent the name attribute of the button from being printed to the console when the image is clicked?

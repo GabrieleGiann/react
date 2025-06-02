@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import CounterDisplay from './CounterDisplay'
+import Button from './Button'
 /*
 Create a Counter function component and create a new state variable called counter initialized to 0.
 The counter value should be incremented every time the user clicks on a button. Tip: use the useState hook.
@@ -24,7 +25,7 @@ const Counter = ({start, increment}) => {
   const handleDecrement =() =>{
     setCount((count) => count - increment)
   }
-
+ 
   const handleReset = () =>{
     setCount(start)
   }
@@ -33,14 +34,18 @@ const Counter = ({start, increment}) => {
     <div id="container">
     <CounterDisplay value={count}/>  
     {/*
+    Funziona ma non è una soluziene molto pulita, l'ho sostituita con delle funzioni 
     <button onClick={()=> setCount((count) => count + increment)}> Aumenta</button>
     <button onClick={()=> setCount((count) => count - increment)}>Diminuisci </button>
     <button onClick={()=> setCount((count) => count = start)}>reset </button>
-    */}
     <button onClick={handleIncrement}>Aumenta</button>
     <button onClick={handleDecrement}>Diminuisci</button>
     <button onClick={handleReset}>Resetta</button>
+    */}
 
+    <Button handler={handleIncrement} label={"Aumenta"}/>
+    <Button handler={handleDecrement} label={"Diminuisci"}/>
+    <Button handler={handleReset} label={"Resetta"}/>
     </div>
   )
 }

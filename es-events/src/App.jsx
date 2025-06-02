@@ -1,16 +1,14 @@
 import AlertClock from './AlertClock'
 import './App.css'
+import { Alert } from './script'
 
 function App() {
 
-  function Alert()
-  {
-    alert(new Date())
-  }
-
   return (
     <>
-      <AlertClock callback={Alert}/>
+      <AlertClock handler={Alert}/>
+
+      /*<button handler={()=>funzione(par)}></button> */
     </>
   )
 }
