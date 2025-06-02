@@ -1,0 +1,12 @@
+.welcome {
+  background-color: blueviolet;
+  border: 2px solid white;
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: rgba(26, 27, 42, 0.804);
+}
